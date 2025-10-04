@@ -8,9 +8,6 @@ this little project was to create for every option an md file so it can be easil
 
 
 to get the json files:
-  - home manager:
-    easy on that one
-    set ```manual.json.enable = true``` in your home manager and the json file will be at `<profile directory>/share/doc/home-manager/options.json`
 
   - nixos configuration:
     here u have to navigate to your folder with your flake and use this command
@@ -18,5 +15,10 @@ to get the json files:
     nix build .#nixosConfigurations.desktop.config.system.build.manual.optionsJSON
     ```
     the output folder will be in the same direcory
+
+  - home manager:
+    easy on that one
+    set ```manual.json.enable = true``` in your home manager and the json file will be at `<profile directory>/share/doc/home-manager/options.json`
+    or you can also use the same command as by nixos options but in your home-manager flake directory
 
 i aint good in rust by any means, i just played around, to see what does what, so this is more of learn rust rather then usefull tool, still maybe for someone helpfull
